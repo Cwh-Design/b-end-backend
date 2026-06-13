@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd.exe /c \"where pnpm\")",
+      "Bash(cmd.exe /c \"pnpm --version\")",
+      "WebFetch(domain:www.figma.com)",
+      "Bash(npm install *)",
+      "Bash(npx vite *)",
+      "Bash(pnpm add *)",
+      "Bash(curl -s -H \"X-Figma-Token: figd_Q7n2Ix3yOhAlnHQu5EWDOi3ZivbWUG2OUoZe93R4\" \"https://api.figma.com/v1/files/TOiO1GM2udQtgQuP3MHelN/nodes?ids=211-31498\")",
+      "Bash(node -e ' *)"
+    ]
+  },
+  "mcpServers": {
+    "figma": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@yhy2001/figma-mcp-server",
+        "--figma-api-key",
+        "figd_Q7n2Ix3yOhAlnHQu5EWDOi3ZivbWUG2OUoZe93R4",
+        "--stdio"
+      ]
+    }
+  }
+}
