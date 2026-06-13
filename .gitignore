@@ -1,0 +1,23 @@
+# 依赖文件夹，不上传
+node_modules
+.pnp
+.pnp.js
+
+# Next缓存，不上传
+.next
+
+# 打包静态产物（关键：注释掉#，允许上传out文件夹）
+# /out
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode缓存
+.vscode/.history
+.cache
+
+# 系统文件
+.DS_Store
+Thumbs.db
